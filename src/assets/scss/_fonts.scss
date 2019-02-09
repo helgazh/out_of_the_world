@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
-@font-face {font-family: "Trump Gothic East W01 Regular";
-    src: url("0154950b1c393c2cdff9968ada35f3f6.eot"); /* IE9*/
-    src: url("0154950b1c393c2cdff9968ada35f3f6.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("0154950b1c393c2cdff9968ada35f3f6.woff2") format("woff2"), /* chrome、firefox */
-    url("0154950b1c393c2cdff9968ada35f3f6.woff") format("woff"), /* chrome、firefox */
-    url("0154950b1c393c2cdff9968ada35f3f6.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url("0154950b1c393c2cdff9968ada35f3f6.svg#Trump Gothic East W01 Regular") format("svg"); /* iOS 4.1- */
-  }
-
+@font-face {
+  font-family: 'trumpGothic';
+  src: url('../fonts/trumpGothicEast.woff2') format('woff2'),
+      url('../fonts/trumpGothicEast.woff') format('woff');
+}

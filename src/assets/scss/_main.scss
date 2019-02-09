@@ -25,72 +25,6 @@ a, button{
     }
 }
 
-//rating
-.rating {
-    float: none;
-    padding-bottom: 5%;
-    display: none;
-    @include breakpoint(large){
-        display: block;
-        padding: 0;
-        width: 100%;
-        margin-bottom: 5%;
-        margin-left: -15%;
-    }
-    @include breakpoint(medium){
-        width: 150%;
-        margin-left: -50%;
-    }
-}
-.rating:not(:checked) > input {
-    position:absolute;
-    @include breakpoint(medium large){
-        position: relative;
-    }
-    top:-9999px;
-    clip:rect(0,0,0,0);
-}
-.rating:not(:checked) > label {
-    float:right;
-    width:1em;
-    padding:0 .001em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:100%;
-    line-height:1.2;
-    color:#ddd;
-    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
-    @include breakpoint(large){
-        font-size:200%;
-    }
-}
-.rating:not(:checked) > label:before {
-    content: '★ ';
-}
-.rating > input:checked ~ label {
-    color: #f70;
-    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
-}
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-    color: gold;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-    color: #ea0;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-}
-.rating > label:active {
-    position:relative;
-    top:2px;
-    left:2px;
-}
-
 //slider
 .one-time{
     position: relative;
@@ -151,6 +85,7 @@ a, button{
 
 //info
 h1{
+    font-family: 'trumpGothic';
     color:  #c74c4c;
     font-size: 32px;
     font-weight: 700;
@@ -160,17 +95,16 @@ h1{
     @include breakpoint(large){
         font-size: 102px;
         line-height: 104px;
-        width: 80%;
         font-size: 102px;
         line-height: 104px;
-        letter-spacing: -10px;
         margin: 0;
-        margin-left: -25%;
+        margin-left: -15%;
         margin-bottom: 7%;
+        max-width: 50%;
     }
 }
 p{
-    font-family: 'Lato, sans-serif';
+    font-family: 'Lato';
     color:  #00000086;
     font-size: 14px;
     font-weight: 400;
